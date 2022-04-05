@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/services.css">
 
     <title>Услуги</title>
@@ -18,6 +19,12 @@
         <div class="header-container container">
             <div class="header-logo">
                 <img src="./img/logo.svg" alt="logo">
+            </div>
+            <div class="header-mobile-logo">
+                <img src="./img/mobile-logo.svg" alt="mobile-logo">
+            </div>
+            <div class="menu-icon">
+                <span></span>
             </div>
             <ul class="header-list">
                 <li class="header-list-item">
@@ -55,27 +62,35 @@
     <section class="services">
         <div class="services-container container">
             <h1 class="services-title">услуги и цены</h1>
+            <div class="services-input mobile">
+                <input type="text" placeholder="Введите название услуги">
+                <button type="button">
+                    <img src="./img/search.svg" alt="">
+                </button>
+            </div>
             <div class="services-top">
                 <div class="services-input">
                     <input type="text" placeholder="Введите название услуги">
                     <button type="button">
-            <img src="./img/search.svg" alt="">
-          </button>
+                        <img src="./img/search.svg" alt="">
+                    </button>
                 </div>
-                <ul class="services-list">
-                    <li class="services-list-item">
-                        <a href="#" class="services-list-link active">Косметология</a>
-                    </li>
-                    <li class="services-list-item">
-                        <a href="#" class="services-list-link">Коррекция фигуры</a>
-                    </li>
-                    <li class="services-list-item">
-                        <a href="#" class="services-list-link">Эпиляция</a>
-                    </li>
-                    <li class="services-list-item">
-                        <a href="#" class="services-list-link">Медицина</a>
-                    </li>
-                </ul>
+                <div class="services-list-linewrapper">
+                    <ul class="services-list">
+                        <li class="services-list-item">
+                            <a href="#" class="services-list-link active">Косметология</a>
+                        </li>
+                        <li class="services-list-item">
+                            <a href="#" class="services-list-link">Коррекция фигуры</a>
+                        </li>
+                        <li class="services-list-item">
+                            <a href="#" class="services-list-link">Эпиляция</a>
+                        </li>
+                        <li class="services-list-item">
+                            <a href="#" class="services-list-link">Медицина</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="services-infos">
                 <a href="#" class="services-info">
@@ -153,16 +168,46 @@
             </div>
         </div>
     </section>
-    <section class="stocks"></section>
+    <section class="stocks">
+        <div class="stocks-container container">
+            <div class="stocks-top">
+                <h2 class="stocks-title">акции клиники</h2>
+                <div class="stocks-navigation">
+                    <div class="stocks-button-prev">
+                        <img src="./img/prev.svg" alt="">
+                    </div>
+                    <div class="stocks-button-next">
+                        <img src="./img/next.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="stocks-slider swiper">
+                <div class="stocks-slider-wrapper swiper-wrapper">
+                    <div class="stocks-slide swiper-slide">
+                        <img src="./img/stock-img-1.png" alt="">
+                    </div>
+                    <div class="stocks-slide swiper-slide">
+                        <img src="./img/stock-img-2.png" alt="">
+                    </div>
+                    <div class="stocks-slide swiper-slide">
+                        <img src="./img/stock-img-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+    </section>
     <footer class="footer">
         <div class="footer-top">
-            <div class="container">
+            <div class="footer-container container">
                 <div class="footer-top-info">
                     <div class="footer-logo">
                         <img src="./img/footer-logo.svg" alt="">
                     </div>
-                    <div class="footer-phone">+7 912 167 71 28</div>
-                    <div class="footer-address">г. Москва, ул. Пушкина, 34</div>
+                    <div class="footer-phone">
+                        <img src="./img/call-icon.svg" alt=""> +7 912 167 71 28
+                    </div>
+                    <div class="footer-address">
+                        <img src="./img/map-icon.svg" alt="">г. Москва, ул. Пушкина, 34
+                    </div>
                     <div class="footer-top-social">
                         <div class="footer-social-item">
                             <img src="./img/footer-whats.svg" alt="">
@@ -175,84 +220,89 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer-top-item">
-                    <h5 class="footer-item-title">Услуги и цены</h5>
-                    <ul class="footer-top-list">
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">Уход</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">Пилинги и чистки</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">Лазерная эпиляция</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">Аппаратные процедуры</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">PRP-терапия</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">PRP-терапия</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-top-item">
-                    <h5 class="footer-item-title"></h5>
-                    <ul class="footer-top-list">
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">Массажи</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">SPA-терапия</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">УЗИ</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">Гинеколог</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">Эндокринолог</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">Подарочные сертификаты</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-top-item">
-                    <h5 class="footer-item-title">О клинике</h5>
-                    <ul class="footer-top-list">
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">Контакты</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">Информация о компании</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">Косметика и аксессуары</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">Подарочные сертификаты</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">Акции и скидки</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">Врачи</a>
-                        </li>
-                    </ul>
+                <div class="footer-top-items">
+                    <div class="footer-top-item">
+                        <h5 class="footer-item-title">Услуги и цены</h5>
+                        <ul class="footer-top-list">
+                            <li class="footer-list-item">
+                                <a href="#" class="footer-list-link">Уход</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#" class="footer-list-link">Пилинги и чистки</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#" class="footer-list-link">Лазерная эпиляция</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#" class="footer-list-link">Аппаратные процедуры</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#" class="footer-list-link">PRP-терапия</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#" class="footer-list-link">PRP-терапия</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-top-item">
+                        <h5 class="footer-item-title"></h5>
+                        <ul class="footer-top-list">
+                            <li class="footer-list-item">
+                                <a href="#" class="footer-list-link">Массажи</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#" class="footer-list-link">SPA-терапия</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#" class="footer-list-link">УЗИ</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#" class="footer-list-link">Гинеколог</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#" class="footer-list-link">Эндокринолог</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#" class="footer-list-link">Подарочные сертификаты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-top-item">
+                        <h5 class="footer-item-title">О клинике</h5>
+                        <ul class="footer-top-list">
+                            <li class="footer-list-item">
+                                <a href="#" class="footer-list-link">Контакты</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#" class="footer-list-link">Информация о компании</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#" class="footer-list-link">Косметика и аксессуары</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#" class="footer-list-link">Подарочные сертификаты</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#" class="footer-list-link">Акции и скидки</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#" class="footer-list-link">Врачи</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <div class="container">
+            <div class="footer-bottom-container container">
                 <p class="footer-bottom-companyname">© ООО «Клиника» 2022г. Все права защищены</p>
-                <div class="footer-bottom-rights">Политика конфиденциальности</div>
+                <a href="#" class="footer-bottom-rights">Политика конфиденциальности</a>
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+
 </body>
 
 </html>

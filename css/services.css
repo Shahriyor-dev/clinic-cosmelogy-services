@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #808080;
+    font-style: normal;
+}
+
+.header {
+    margin-bottom: 40px;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-list-item {
+    margin-right: 30px;
+}
+
+.header-list-link {
+    font-weight: 500;
+    font-size: 12px;
+    color: #808080;
+    line-height: 12px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.header-social {
+    display: flex;
+    margin-left: 10px;
+}
+
+.header-social-item {
+    background: #8FC2D8;
+    margin-right: 5px;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+}
+
+.header-social-item img {
+    width: 14px;
+    height: 14px;
+    padding: 6px;
+}
+
+.services {
+    margin-bottom: 150px;
+}
+
+.services-title {
+    font-size: 50px;
+    line-height: 70px;
+    text-transform: uppercase;
+    color: #50514D;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.services-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.services-input {
+    background: #F5F5F5;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 15px 11px 15px 9px;
+    width: 424px;
+}
+
+.services-input input {
+    border: 0;
+    background-color: transparent;
+    width: 394px;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.services-input input::placeholder {
+    color: #afafaf;
+}
+
+.services-input button {
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.services-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.services-list-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.services-list-link {
+    text-decoration: none;
+    color: #808080;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.services-list-link.active {
+    color: #50514D;
+}
+
+.services-list-link.active::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #8FC2D8;
+    margin: 5px auto;
+}
+
+.services-infos {
+    border-bottom: 1px solid #808080;
+}
+
+.services-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    border-top: 1px solid #808080;
+    text-decoration: none;
+    transition: all .4s;
+}
+
+.services-info:hover .services-info-title {
+    color: #8FC2D8;
+}
+
+.services-info-title {
+    font-size: 22px;
+    line-height: 160%;
+    text-transform: uppercase;
+    color: #50514D;
+    margin-bottom: 10px;
+}
+
+.services-info-text {
+    font-size: 14px;
+    line-height: 24px;
+    max-width: 633px;
+    color: #808080;
+}
+
+.services-info-price {
+    font-size: 22px;
+    line-height: 32px;
+    line-height: 160%;
+    color: #50514D;
+    margin-bottom: 10px;
+}
+
+.services-info-hours {
+    font-size: 14px;
+    color: #808080;
+    line-height: 24px;
+}
+
+.banner {
+    margin-bottom: 150px;
+    background-image: url("../img/banner-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    padding: 100px 0;
+}
+
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: 350px;
+    margin-bottom: 40px;
+}
+
+.banner-description {
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+    max-width: 450px;
+    margin-bottom: 50px;
+}
+
+.banner-btn {
+    background: #FF9A81;
+    border-radius: 100px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 15px 36px;
+    border: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+}
